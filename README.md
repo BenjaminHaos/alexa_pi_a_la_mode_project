@@ -2,7 +2,7 @@
 
 # Alexa Pie à la Mode!
 
-# [WAT?](http://haos.info/alexa_pi_a_la_mode_project/slides/index.html/ "CLICK TO VIEW PRESENTATION!")
+# [WAT?](http://haos.info/alexa_pi_a_la_mode_project/slides/index.html "CLICK TO VIEW PRESENTATION!")
 
 A basic example that give your Amazon Echo the ability to turn on and off devices controlled by an IR Remote.
 
