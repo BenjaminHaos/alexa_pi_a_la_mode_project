@@ -1,16 +1,42 @@
 # Alexa Pi Arduino ir Remote
 
-A basic example for making your echo turn on your tv.
 
 # WAT?
 
-Say "Alexa, turn on the television" and have the TV turn on.
+A basic example that give your Amazon Echo the ability to turn on and off devices controlled by an IR Remote.
 
-* A simple Python app that allows the Pi to accept comm. from an Alex Echo. (works, but hacky)
+#### Say "Alexa, turn on the television" and have the TV turn on. Say "Alexa, turn on the stereo" and have the stereo turn on. Saying "Alexa, turn off <device>" turns off said device.
+
+A few simple bits of code that allows a Raspberry Pi to accept communications from an Amazon Echo and in turn signal an Arduino to flash an IR led (or several.) Although it works, it is a bit hacky and is only setup for a basic proof of concept. As is right now, it turns on my TV and or my stereo.
+
+### Supplies
+
+#### Hardware
+
+* Arduino
+* Raspberry PI
+* Amazon Echo
+* Router
+
+#### Electrical Bits
+
+* IR LED(s)
+* Resistors
+* Wires
+* Breadboard (optional)
+
 
 # HOW?
 
 An Alexa signals to a Raspberry pi that in turn sends signal to an Arduino that flashes an ir led to turn on your tv.
+
+#### Circuit
+
+![Circuit Diagram](/docs/img/circuit_diagram.jpg)
+
+[Source](https://circuits.io/circuits/4368694-alexa-pi-a-la-mode-arduino-portion)
+
+*note* Although the circuit is available online, running the simulation does not work at time of writing. I suspect the IRremote.h library is not being included correctly.
 
 ## To Use:
 
