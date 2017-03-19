@@ -32,7 +32,7 @@ An Alexa signals to a Raspberry pi that in turn sends signal to an Arduino that 
 
 #### Arduino Circuit
 
-![Circuit Diagram](/docs/img/circuit_diagram.jpg)
+![Circuit Diagram](/docs/img/circuit_diagram.png)
 
 [Source](https://circuits.io/circuits/4368694-alexa-pi-a-la-mode-arduino-portion)
 
