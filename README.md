@@ -1,8 +1,8 @@
 ![Circuit Diagram](/docs/img/circuit_diagram.png)
 
-# Alexa Pi Arduino ir Remote
+# Alexa Pie à la Mode!
 
-# WAT?
+# [WAT?](/docs/slides/index.html "CLICK TO VIEW PRESENTATION!")
 
 A basic example that give your Amazon Echo the ability to turn on and off devices controlled by an IR Remote.
 
