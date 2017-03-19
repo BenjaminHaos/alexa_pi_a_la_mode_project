@@ -1,5 +1,6 @@
-# Alexa Pi Arduino ir Remote
+![Circuit Diagram](/docs/img/circuit_diagram.png)
 
+# Alexa Pi Arduino ir Remote
 
 # WAT?
 
@@ -32,7 +33,7 @@ An Alexa signals to a Raspberry pi that in turn sends signal to an Arduino that 
 
 #### Arduino Circuit
 
-![Circuit Diagram](/docs/img/circuit_diagram.png)
+![Circuit Diagram](/docs/img/circuit_diagram.jpg)
 
 [Source](https://circuits.io/circuits/4368694-alexa-pi-a-la-mode-arduino-portion)
 
