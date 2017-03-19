@@ -30,7 +30,7 @@ A few simple bits of code that allows a Raspberry Pi to accept communications fr
 
 An Alexa signals to a Raspberry pi that in turn sends signal to an Arduino that flashes an ir led to turn on your tv.
 
-#### Circuit
+#### Arduino Circuit
 
 ![Circuit Diagram](/docs/img/circuit_diagram.jpg)
 
