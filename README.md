@@ -87,3 +87,8 @@ In your home.
 # WHO?
 
 Anyone who has an Amazon Echo, a Raspberry Pi, an Arduino Uno, a ir led, a resistor, and some wires.
+
+
+## Notes
+
+* http://www.aftvnews.com/controlling-the-amazon-fire-tv-with-the-amazon-echo/
