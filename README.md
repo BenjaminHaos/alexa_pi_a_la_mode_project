@@ -51,8 +51,8 @@ An Alexa signals to a Raspberry pi that in turn sends signal to an Arduino that 
 * SSH into pi using 
     * login id : 'pi'
     * password : 'raspberry'
-* Add modified setup_pi_part_1.bash script to pi user directory.
-* Run script with 'sudo bash etup_pi_part_1.bash'
+* Add modified ```setup_pi_part_1.bash``` script to pi user directory.
+* Run script with 'sudo bash setup_pi_part_1.bash'
 * Exit login with 'exit' command.
 * Login with username modified above using ssh key.
 * Run bash script ```delete_default_pi_user.bash``` to delete default pi user.
