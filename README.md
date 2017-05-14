@@ -44,7 +44,7 @@ An Alexa signals to a Raspberry pi that in turn sends signal to an Arduino that 
 * Download Raspian Lite [Image](https://www.raspberrypi.org/downloads/raspbian/).
 * Download [Win32DiskImage](https://sourceforge.net/projects/win32diskimager/) tool.
 * Download the files in this repository.
-* Modify [setup_pi_part_1.bash](https://github.com/EntropyHaos/z_haos_raspberry_pi_home_server_setup_script_set/blob/master/setup_pi_part_1.bash) variables with your new user name and ssh public key.
+* Modify [setup_pi_part_1.bash](https://github.com/BenjaminHaos/z_haos_raspberry_pi_home_server_setup_script_set/blob/master/setup_pi_part_1.bash) variables with your new user name and ssh public key.
 * Write Image to SD card.
 * Copy blank file with name 'ssh' to SD card.
 * Boot pi.
