@@ -1,6 +1,50 @@
 # hello_raspberry_pi_cec
 
-Browswer Dump *(Saturday)*
+#### Basic Setup
+
+##### *Prerequisites*
+
+1. sd card and reader/writer device.
+1. Download and install Win32DiskImager.
+2. Download and unzip 2017-04-10-raspbian-jessie-lite.zip.
+
+
+1. Insert sd card into reader/writer device and plug device into computer.
+2. Use windows diskpart tool to removes any and all partition or volume formatting from the disk.
+3. Run command cmd.exe or open terminal by right clicking start menu button and choosing Command Prompt or Windows PowerShell
+    3. ```diskpart```
+    4. ```list disk``` *(Find your sd-card disk #)*
+    5. ```select disk <sd-card disk #>```
+    6. ```clean```
+1. Use Win32DiskImager to write iso file to sd card.
+2. Create file named ssh in ```/boot``` directory of sd card.[*](https://www.raspberrypi.org/forums/viewtopic.php?t=74176)
+
+#### 
+1. Unplug anything plugged into your pi.
+3. Plug ethernet into pi.
+4. Insert sd card created above.
+5. Plug power cord into pi.
+5. Use terminal program to ssh into pi.
+    6. username is ```pi``` 
+    7. password is ```raspberry```.
+7. Change password for pi user.[*](https://www.raspberrypi.org/documentation/linux/usage/users.md)
+8. ```passwd```
+
+
+1. Create ssh key pair.
+2. Create directory for public ssh key.
+    1. ```mkdir .ssh```
+3. Create file for public key.
+    1. ```printf "<ssh_public_key>"  >> .ssh/authorized_keys```
+4. Set permissions for the folders you have just created.[*](https://mediatemple.net/community/products/dv/204644740/using-ssh-keys-on-your-server)
+1. ```chmod 700 .ssh/```
+2. ```chmod 600 .ssh/authorized_keys```
+exit
+
+### Setup NOTES
+
+
+### Browswer Dump *(Saturday)*
 
 * [CEC (Consumer Electronics Control) over HDMI - eLinux.org](http://elinux.org/CEC_(Consumer_Electronics_Control)_over_HDMI)
 * [raspberry pi cec - Google Search](https://www.google.com/search?q=raspberry+pi+cec&oq=raspberry+pi+cec&aqs=chrome..69i57j0l5.3503j0j7&sourceid=chrome&ie=UTF-8)
@@ -15,7 +59,7 @@ Browswer Dump *(Saturday)*
 * [Win32 Disk Imager download | SourceForge.net](https://sourceforge.net/projects/win32diskimager/?source=typ_redirect)
 * [pi_n_cec_note_taker - Cloud9](https://ide.c9.io/benjaminhaos/pi_n_cec_note_taker#openfile-README.md)
 
-Browswer Dump *(Sunday)*
+### Browswer Dump *(Sunday)*
 
 * [What are your favorite tips and tricks for storage/access/use of arduino and all its parts? : arduino](https://www.reddit.com/r/arduino/comments/6b048t/what_are_your_favorite_tips_and_tricks_for/)
 * [tackle box - Walmart.com](https://www.walmart.com/search/?query=tackle%20box)
@@ -54,3 +98,16 @@ Browswer Dump *(Sunday)*
 * [Hello, World! - Learn Python - Free Interactive Python Tutorial](https://www.learnpython.org/en/Hello%2C_World%21)
 * [A security update for Raspbian PIXEL - Raspberry Pi](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/)
 * [Copy All Urls - Chrome Web Store](https://chrome.google.com/webstore/detail/copy-all-urls/djdmadneanknadilpjiknlnanaolmbfk?hl=en)
+
+### Browswer Dump *(Monday)*
+
+* [raspberry pi change pi username - Google Search](https://www.google.com/search?q=raspberry+pi+change+pi+username&oq=raspberry+pi+change+pi+username&aqs=chrome..69i57j0l2.9287j0j8&sourceid=chrome&ie=UTF-8)
+* [Linux users - Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/linux/usage/users.md)
+* [ModMyPi | How to Change the Default Account Username and Password](https://www.modmypi.com/blog/how-to-change-the-default-account-username-and-password)
+* [Raspberry Pi • View topic - How to create a ISO from a customised raspbian system ?](https://www.raspberrypi.org/forums/viewtopic.php?t=49503&p=385472)
+
+### Browswer Dump *(Tuesday)*
+
+* [raspberry pi cec frames - Google Search](https://www.google.com/search?q=raspberry+pi+cec+frames&oq=raspberry+pi+cec+frames&aqs=chrome..69i57.5967j0j9&sourceid=chrome&ie=UTF-8)
+* [Tips for using cec-client on a Raspberry Pi : raspberry_pi](https://www.reddit.com/r/raspberry_pi/comments/5ihbei/tips_for_using_cecclient_on_a_raspberry_pi/)
+* [Gordon Turner » Using cec-client on a Raspberry Pi](https://blog.gordonturner.com/2016/12/14/using-cec-client-on-a-raspberry-pi/)
