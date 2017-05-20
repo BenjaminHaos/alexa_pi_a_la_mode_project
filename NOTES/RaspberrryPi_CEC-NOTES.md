@@ -10,19 +10,6 @@
 **Display Device Info :**  
 ```echo scan | cec-client -s -d 1```
 
-
-**Allow Command Line to [Open Windows on Remote Machine](https://askubuntu.com/questions/405916/open-a-window-in-a-remote-machine) :**  
-```export DISPLAY=:0```
-
-**Opens Chromium Browser in Kiosk Mode (Full Screen, No Exit)**  
-```chromium-browser --kiosk http://haos.info/```
-
-**[Kill All Instances](https://www.garron.me/en/bits/kill-all-instances-chromium-linux-command-line.html) of Chromium from Command Line :**  
-```pkill chromium```
-
-**Shutdown Pi from Command Line :**  
-```sudo poweroff```
-
 **Turn Television On**  
 ```echo "on 0" | cec-client RPI -s -d 11```  
 or  
@@ -36,7 +23,6 @@ or
 **Mute/Unmute Audio**  
 ```echo "tx 15:44:43" | cec-client RPI -s -d 1```
 
-
 **Switch TV source to Chromecast (1.3.0.0)**  
 ```echo "tx 1F:82:13:00" | cec-client RPI -s -d 1```
 
@@ -48,7 +34,6 @@ or
 
 **Switch Everything to Standby**  
 ```echo "tx 1F:36" | cec-client RPI -s -d 1```
-
 
 **Pause**  
 ```echo "tx 14:44:44" | cec-client RPI -s -d 1```
