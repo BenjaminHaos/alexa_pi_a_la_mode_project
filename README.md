@@ -1,3 +1,7 @@
+Setup:
+
+```sudo apt-get -y install cec-utils```
+
 Uses:
 
 Maker Musings' [fauxmo](https://github.com/makermusings/fauxmo) script.

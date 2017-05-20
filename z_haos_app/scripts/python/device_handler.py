@@ -12,37 +12,53 @@ from debounce_handler import debounce_handler
 television_on="./scripts/bash/television_on.bash";
 television_off="./scripts/bash/television_off.bash";
 
+audio_on="./scripts/bash/sony_av_on.bash";
+audio_off="./scripts/bash/sony_av_off.bash";
+
+fire_tv_on="./scripts/bash/fire_tv_on.bash";
+fire_tv_off="./scripts/bash/fire_tv_off.bash";
+
+raspberry_pi_on="./scripts/bash/raspberry_pi_on.bash";
+raspberry_pi_off="./scripts/bash/raspberry_pi_off.bash";
+
 class device_handler(debounce_handler):
     # Publishes the on/off state requested,
     # and the IP address of the Echo making the request.
 
-    TRIGGERS = {"television": 52000, "stereo": 52001, "computer one": 52002}
+    TRIGGERS = {"Television": 52000, "Stereo": 52001, "Fire TV": 52002, "Raspberry Pi": 52003}
+    
     
     def act(self, client_address, state, name):
-        if name == 'television':
+        
+        def device_handler_log(state, name):
+            if state:
+              logging.debug('Turning %s on.' % name);
+            else:
+              logging.debug('Turning %s off.' % name);
+            return;
+        
+        device_handler_log(state, name);
+
+        if name == 'Television':
           if state:
-            #write_serial_out(1);
-            #print 'Turning %s on!!' % name;
-            logging.debug("Turning television on!!");
-            subprocess.call(television_on, shell=True);
+            subprocess.call(television_on);
           else:
-            #write_serial_out(2);
-            print 'Turning %s off!!' % name;
-            subprocess.call(television_off, shell=True);
-        elif name == 'stereo':
+            subprocess.call(television_off);
+        elif name == 'Stereo':
           if state:
-            #write_serial_out(3);
-            print '%s on' % name;
+            subprocess.call(audio_on);
           else:
-            #write_serial_out(4);
-            print '%s off' % name;
-        elif name == 'computer one':
+            subprocess.call(audio_off);
+        elif name == 'Fire TV':
           if state:
-            #write_serial_out(3);
-            print '%s on' % name;
+            subprocess.call(fire_tv_on);
           else:
-            #write_serial_out(4);
-            print '%s off' % name;
+            subprocess.call(fire_tv_off);
+        elif name == 'Raspberry Pi':
+          if state:
+            subprocess.call(raspberry_pi_on);
+          else:
+            subprocess.call(raspberry_pi_off);
         else:
           return False;        
         
