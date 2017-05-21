@@ -1,5 +1,7 @@
 http://www.stuffaboutcode.com/2012/06/raspberry-pi-run-program-at-start-up.html
 
+http://cosmolinux.no-ip.org/raconetlinux2/boot.html
+
 
 ```bash
 #! /bin/sh
@@ -39,4 +41,4 @@ esac
 exit 0
 ```
 
-
+sudo update-rc.d alexa_listener_script defaults
