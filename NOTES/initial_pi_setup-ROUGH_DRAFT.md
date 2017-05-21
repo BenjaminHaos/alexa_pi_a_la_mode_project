@@ -132,23 +132,3 @@
 1. Scan all devices connected to the HDMI bus with ```echo scan | cec-client -s -d 1```.
 1. Turn device on with ```echo on <device number> | cec-client -s -d 1```, substituting <device number> with the device you want to turn on.
 1. Standby device with ```echo standby <device number> | cec-client -s -d 1```, substituting <device number> with the device you want to turn on.
-
-
-1. 
-1. 
-1. 
-1. 
-1. 
-1. 
-1. 
-1. 
-1. 
-1. 
-1. 
-1. 
-1. 
-1. 
-
-
-
-
