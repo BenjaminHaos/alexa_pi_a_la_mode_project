@@ -1,3 +1,3 @@
 ## WAT?
 
-This folder contains files needed for the web demo of the code.
+This folder contains files needed for the applications website.
