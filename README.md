@@ -1,3 +1,5 @@
+*Version 1*
+
 ![Circuit Diagram](/docs/img/circuit_diagram.png)
 
 # Alexa Pie à la Mode!
