@@ -14,17 +14,17 @@ app_directory="/home/pi/alexa_pi_a_la_mode_project/z_haos_app";
 television_on = app_directory + "/scripts/bash/television_on.bash";
 television_off = app_directory + "/scripts/bash/television_off.bash";
 
-stereo_on="./scripts/bash/sony_av_on.bash";
-stereo_off="./scripts/bash/sony_av_off.bash";
+stereo_on = app_directory + "/scripts/bash/sony_av_on.bash";
+stereo_off = app_directory + "/scripts/bash/sony_av_off.bash";
 
-fire_tv_on="./scripts/bash/fire_tv_on.bash";
-fire_tv_off="./scripts/bash/fire_tv_off.bash";
+fire_tv_on = app_directory + "/scripts/bash/fire_tv_on.bash";
+fire_tv_off = app_directory + "/scripts/bash/fire_tv_off.bash";
 
-raspberry_pi_on="./scripts/bash/raspberry_pi_on.bash";
-raspberry_pi_off="./scripts/bash/raspberry_pi_off.bash";
+raspberry_pi_on = app_directory + "/scripts/bash/raspberry_pi_on.bash";
+raspberry_pi_off = app_directory + "/scripts/bash/raspberry_pi_off.bash";
 
-google_on="./scripts/bash/google_on.bash";
-google_off="./scripts/bash/google_off.bash";
+google_on = app_directory + "/scripts/bash/google_on.bash";
+google_off = app_directory + "/scripts/bash/google_off.bash";
 
 class device_handler(debounce_handler):
     # Publishes the on/off state requested,

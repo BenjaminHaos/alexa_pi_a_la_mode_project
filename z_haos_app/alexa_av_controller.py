@@ -3,8 +3,9 @@
 
 # Alexa Setup Local : https://alexa.amazon.com/
 import sys;
-sys.path.insert(0, 'lib');
-sys.path.insert(0, 'scripts/python');
+
+sys.path.insert(0, '/home/pi/alexa_pi_a_la_mode_project/z_haos_app/lib');
+sys.path.insert(0, '/home/pi/alexa_pi_a_la_mode_project/z_haos_app/scripts/python');
 
 import fauxmo
 import logging
