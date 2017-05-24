@@ -1,11 +1,11 @@
 import subprocess
 import logging
 
-logging.basicConfig(level=logging.DEBUG)
-#logging.basicConfig(level=logging.INFO)
-#logging.basicConfig(level=logging.WARNING)
-#logging.basicConfig(level=logging.ERROR)
-#logging.basicConfig(level=logging.CRITICAL)
+logging.basicConfig(level=logging.DEBUG);
+#logging.basicConfig(level=logging.INFO);
+#logging.basicConfig(level=logging.WARNING);
+#logging.basicConfig(level=logging.ERROR);
+#logging.basicConfig(level=logging.CRITICAL);
 
 from debounce_handler import debounce_handler
 
