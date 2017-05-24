@@ -49,13 +49,15 @@ Using a freshly imaged Pi, open a terminal and run these commands:
 
 ```
 git clone https://github.com/BenjaminHaos/alexa_pi_a_la_mode_project.git
+cd alexa_pi_a_la_mode_project
 git checkout version_2.0
+cd ..
 bash alexa_pi_a_la_mode_project/z_haos_app/setup/setup_pi.bash
 sudo reboot
 ```
 ### Run App
 
-Once the above commands have finished,  open a terminal and run this command:
+Once the above commands successfully been ran, open a terminal and run this command:
 ```
 python alexa_pi_a_la_mode_project/z_haos_app/alexa_av_controller.py
 ```
