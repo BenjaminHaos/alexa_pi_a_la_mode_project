@@ -26,11 +26,15 @@ raspberry_pi_off = app_directory + "/scripts/bash/raspberry_pi_off.bash";
 google_on = app_directory + "/scripts/bash/google_on.bash";
 google_off = app_directory + "/scripts/bash/google_off.bash";
 
+surround_sound_on = app_directory + "/scripts/bash/turn_on_surround_sound.bash"
+surround_sound_off = app_directory + "/scripts/bash/turn_off_surround_sound.bash"
+
+
 class device_handler(debounce_handler):
     # Publishes the on/off state requested,
     # and the IP address of the Echo making the request.
 
-    TRIGGERS = {"Television": 52000, "Stereo": 52001, "Fire TV": 52002, "Raspberry Pi": 52003, "Google": 52004}
+    TRIGGERS = {"Television": 52000, "Stereo": 52001, "Fire TV": 52002, "Raspberry Pi": 52003, "Google": 52004, "Surround Sound": 52005}
     
     
     def act(self, client_address, state, name):
@@ -69,6 +73,11 @@ class device_handler(debounce_handler):
             subprocess.call(google_on);
           else:
             subprocess.call(google_off);
+        elif name == 'Surround Sound':
+          if state:
+            subprocess.call(surround_sound_on);
+          else:
+            subprocess.call(surround_sound_off);
         else:
           return False;        
         
