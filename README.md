@@ -1,3 +1,9 @@
+# Alexa Pi à la Mode
+
+
+{Trello](https://trello.com/b/MZ76eJ5S)
+
+
 Setup:
 
 ```sudo apt-get -y install cec-utils```
