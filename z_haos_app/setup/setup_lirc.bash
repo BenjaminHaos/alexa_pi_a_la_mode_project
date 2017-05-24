@@ -1,21 +1,23 @@
-### Setup lirc on Raspberry Pi
+#!/bin/bash
 
-* [Setting up LIRC on the RaspberryPi - alexba.in](http://alexba.in/blog/2013/01/06/setting-up-lirc-on-the-raspberrypi/)
-
+# Re-synchronize the package index files from their sources.
 sudo apt-get update
+
+# Install lirc
 sudo apt-get -y install lirc
 
-sudo nano /etc/modules
+# Append lines for lirc to end of modules files
+cat << 'EOF' >> /etc/modules
 
-```
 lirc_dev
 lirc_rpi gpio_in_pin=23 gpio_out_pin=22
-```
 
-sudo nano /etc/lirc/hardware.conf
+EOF
 
+# Change hardware file.
 
-```
+cat << 'EOF' > /etc/lirc/hardware.conf
+
 ########################################################
 # /etc/lirc/hardware.conf
 #
@@ -41,17 +43,18 @@ MODULES="lirc_rpi"
 LIRCD_CONF=""
 LIRCMD_CONF=""
 ########################################################
-```
 
-sudo nano /boot/config.txt
+EOF
 
-```
+
+# Append lines to config file.
+cat << 'EOF' >> /boot/config.txt
+
 dtoverlay=lirc-rpi,gpio_in_pin=23,gpio_out_pin=22
-```
 
-sudo nano /etc/lirc/lircd.conf
+EOF
 
-```
+cat << 'EOF' > /etc/lirc/lircd.conf
 #
 # this config file was automatically generated
 # using lirc-0.8.5(commandir) on Sun Jul 26 19:34:37 2009
@@ -79,7 +82,6 @@ begin remote
   toggle_bit_mask 0x0
 
       begin codes
-          BTN_SLEEP                0x030C
           BTN_STANDBY              0x7620
           BTN_POWER                0x540C
           BTN_VIDEO1               0x220C
@@ -118,25 +120,5 @@ begin remote
       end codes
 
 end remote
+EOF
 
-```
-
-[*](http://lirc.sourceforge.net/remotes/sony/RM-AAU014)
-
-
-irsend LIST SONY_RM-AAU014 ""
-
-##### Turn off A/V Reciever
-```irsend SEND_ONCE SONY_RM-AAU014 BTN_STANDBY```
-
-##### Switch A/V Reciever Input to TV
-```irsend SEND_ONCE SONY_RM-AAU014 BTN_TV```
-
-
-### Misc. Notes & Sites of Use
-
-* [IR Remote Control » Raspberry Pi Geek](http://www.raspberry-pi-geek.com/Archive/2015/10/Raspberry-Pi-IR-remote)
-* [lirc.sourceforge.net/remotes/nikon/ML-L3](http://lirc.sourceforge.net/remotes/nikon/ML-L3)
-* [IR Remote Control - Page: 1.2 - Seite 2 » Raspberry Pi Geek](http://www.raspberry-pi-geek.com/Archive/2015/10/Raspberry-Pi-IR-remote/(offset)/2)
-
-* [2N3904.pdf](https://www.sparkfun.com/datasheets/Components/2N3904.pdf)
