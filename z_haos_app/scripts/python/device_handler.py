@@ -9,8 +9,10 @@ logging.basicConfig(level=logging.DEBUG)
 
 from debounce_handler import debounce_handler
 
-television_on="./scripts/bash/television_on.bash";
-television_off="./scripts/bash/television_off.bash";
+app_directory="/home/pi/alexa_pi_a_la_mode_project/z_haos_app";
+
+television_on = app_directory + "/scripts/bash/television_on.bash";
+television_off = app_directory + "/scripts/bash/television_off.bash";
 
 audio_on="./scripts/bash/sony_av_on.bash";
 audio_off="./scripts/bash/sony_av_off.bash";
