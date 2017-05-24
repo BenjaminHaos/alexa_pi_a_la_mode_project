@@ -26,7 +26,7 @@ logging.basicConfig(level=logging.DEBUG)
 #logging.basicConfig(level=logging.ERROR)
 #logging.basicConfig(level=logging.CRITICAL)
 
-logging.debug("Alexa AV Controller About to Start!");
+logging.debug("\nAlexa AV Controller About to Start!\n");
 
 if __name__ == "__main__" and run_alexa_listener:
     # Startup the fauxmo server
