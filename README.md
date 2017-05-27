@@ -77,7 +77,7 @@ Because it is needed?
 ## Libraries and Resources Used:
 
 ##### HDMI
-* [LIRC - Linux Infrared Remote Control](http://www.lirc.org/)
+* [Ubuntu Manpage: cec-client - CEC connection client utility](http://manpages.ubuntu.com/manpages/xenial/man1/cec-client.1.html)
 
 ##### WeMo Emulation
 * Maker Musings' [fauxmo](https://github.com/makermusings/fauxmo) script.
