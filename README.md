@@ -77,11 +77,14 @@ Because it is needed?
 ## Libraries and Resources Used:
 
 ##### HDMI
+* [LIRC - Linux Infrared Remote Control](http://www.lirc.org/)
+
+##### WeMo Emulation
 * Maker Musings' [fauxmo](https://github.com/makermusings/fauxmo) script.
 * Todd Medema's [debounce_handler](https://github.com/toddmedema/echo/blob/master/debounce_handler.py) from [echo](https://github.com/toddmedema/echo).
 
 ##### IR
-* Linux Infrared Remote Control[LIRC](http://www.lirc.org/)
+* Linux Infrared Remote Control [LIRC](http://www.lirc.org/)
 
 * Trello [Board](https://trello.com/b/MZ76eJ5S)
 
